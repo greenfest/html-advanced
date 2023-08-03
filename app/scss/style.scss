@@ -225,8 +225,8 @@ ul.breadcrumbs__items li:last-child {
     margin: 130px 0 0;
   }
   &__select-item {
-    border:0px;
-    outline:0px;
+    border: 0;
+    outline: 0;
     color: #6F6E6E;
     font-family: Lato-Regular, sans-serif;
     font-size: 14px;
@@ -256,11 +256,45 @@ ul.breadcrumbs__items li:last-child {
     width: 25.99px;
     height: 23.54px;
   }
-
-
-  
 }
 
+/* Filter */
+.filter {
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.9fr;
+    grid-template-rows: 1fr;
+    gap: 0 0;
+    grid-template-areas:
+    ". .";
+    padding: 50px 0 20px;
+  }
+  &__left-group {
+    display: flex;
+    align-items: center;
+  }
+  &__right-group {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    margin-right: 11px;
+    font-family: Lato-Bold, sans-serif;
+    font-size: 14px;
+  }
+  &__item {
+    color: #6F6E6E;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 14px;
+    background-color: transparent;
+    border: 0;
+    margin-right: 10px;
+    & svg {
+      margin-left: 10px;
+    }
+  }
+}
 
 /* Top Content */
 .top-content {
@@ -470,6 +504,26 @@ ul.breadcrumbs__items li:last-child {
   background-image: url("../images/featured_6.jpg");
 }
 
+.featured-items__image7 {
+  background-image: url("../images/featured_7.jpg");
+}
+
+.featured-items__image8 {
+  background-image: url("../images/featured_8.jpg");
+}
+
+.featured-items__image9 {
+  background-image: url("../images/featured_9.jpg");
+}
+
+.featured-items__image10 {
+  background-image: url("../images/featured_10.jpg");
+}
+
+.featured-items__image11 {
+  background-image: url("../images/featured_11.jpg");
+}
+
 .featured-items__cart {
   display: flex;
   visibility: hidden;
@@ -530,6 +584,31 @@ ul.breadcrumbs__items li:last-child {
   color: #FFFFFF;
   border: 1px solid #F26376;
   background-color: #F26376;
+}
+
+/* Pagination */
+.pagination {
+  margin-bottom: 40px;
+  &__wrapper {
+    margin: 0 auto;
+    width: 283px;
+    height: 20px;
+    border: 1px solid #EBEBEB;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    font-family: Lato-Light, sans-serif;
+    font-size: 16px;
+    color: #C4C4C4;
+    text-decoration: none;
+    margin: 0 5px;
+    &_active {
+      color: #EF5B70;
+    }
+  }
 }
 
 /* Features */
