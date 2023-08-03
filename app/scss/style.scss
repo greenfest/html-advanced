@@ -5,6 +5,8 @@
 @import 'global';
 
 
+$colorSelect: #EF5B70;
+
 /* Header */
 .header {
   background-color: #222222;
@@ -273,26 +275,99 @@ ul.breadcrumbs__items li:last-child {
   &__left-group {
     display: flex;
     align-items: center;
+    position: relative;
+  }
+  &__sort {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 360px;
+    padding: 13px 16px;
+    &[open] {
+      background-color: #fff;
+      filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+    }
+    &[open] .filter__title {
+      color: $colorSelect;
+    }
+    &[open] path {
+      fill: $colorSelect;
+    }
+    &-heading {
+      list-style: none;
+    }
+    &-box {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background: #FFF;
+      box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+      padding: 7px 30px 11px 9px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 20px;
+      width: 43px;
+    }
   }
   &__right-group {
     display: flex;
     align-items: center;
+    gap: 18px;
+  }
+  &__link {
+    font-family: Lato-Regular, sans-serif;
+    font-size: 14px;
+    color: #6F6E6E;
+    text-decoration: none;
+    margin-left: 11px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    transition: color .3s;
+    &:hover {
+      color: $colorSelect;
+    }
   }
   &__title {
     margin-right: 11px;
     font-family: Lato-Bold, sans-serif;
     font-size: 14px;
   }
-  &__item {
+  &__summary {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &__select {
     color: #6F6E6E;
     font-family: Lato-Regular, sans-serif;
     font-size: 14px;
-    background-color: transparent;
-    border: 0;
-    margin-right: 10px;
+    margin-right: 25px;
+    position: relative;
     & svg {
       margin-left: 10px;
     }
+  }
+  &__item {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    &[open] .filter__heading {
+      color: $colorSelect;
+    }
+  }
+  &__heading {
+    text-transform: uppercase;
+    color: #6F6E6E;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #EBEBEB;
+    border-left: 5px solid $colorSelect;
+    padding: 8px 11px 11px 11px;
+    position: relative;
   }
 }
 
