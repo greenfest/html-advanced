@@ -115,30 +115,152 @@ ul.breadcrumbs__items li:last-child {
   font-family: Lato-Bold, sans-serif;
 }
 
-/* Product-photo */
-.product-photo {
-  background-color: #F7F7F7;
-  display: flex;
-  justify-content: center;
+/* Product */
+.product {
+  padding-bottom: 30px;
+  &__wrapper {
+    background-color: #F7F7F7;
+    justify-content: center;
+    border: 1px solid #EAEAEA;
+    padding: 30px 0;
+    }
+  &__slider {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img {
+      margin: 0 auto;
+    }
+  }  
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42, 42, 42, 0.15);
+    width: 47px;
+    height: 47px;
+  }
+  &__prewArr {
+    position: absolute;
+    top:50%;
+    left: 0;
+    z-index: 999;
+  }
+  &__nextArr {
+    position: absolute;
+    top:50%;
+    right: 0;
+    z-index: 999;
+  } 
+  &__info {
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+    & .container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #EAEAEA;
+      border-top: 0;
+    }
+  }
+  &__frame {
+    background-color: #fff;
+    width: 1200px;
+    height: 60px;
+    z-index:999;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #EAEAEA;
+    border-bottom: 0;
+  }
+  &__subtitle {
+    margin: 30px 0;
+    color: #F16D7F;
+    font-family: Lato-light,sans-serif;
+    font-size: 14px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 63px;
+      height: 3px;
+      background-color: #EF5B70;
+    }
+  }
+  &__title {
+    color: #4D4D4D;
+    font-family: Lato-light,sans-serif;
+    font-size: 18px;
+    margin: 5px 0 0;
+  }
+  &__description {
+    color: #5E5E5E;
+    font-family: Lato-light,sans-serif;
+    font-size: 14px;
+    margin: 48px 0 0;
+    max-width: 550px;
+    line-height: 1.3;
+    text-align: center;
+  }
+  &__price {
+    color: #EF5B70;
+    font-family: Lato-light,sans-serif;
+    font-size: 34px;
+    margin: 32px 0 0;
+  }
+  &__selects {
+    margin: 130px 0 0;
+  }
+  &__select-item {
+    border:0px;
+    outline:0px;
+    color: #6F6E6E;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 14px;
+    margin: 0 10px;
+  }
+  &__cart {
+    display: flex;
+    align-items: center;
+    padding: 13px 16px;
+    border: 1px solid #FF6A6A;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 48px 0 64px;
+  }
+
+  &__cart-icon {
+    width: 26px;
+    margin-right: 10px;   
+  }
+  &__cart-text {
+    color: #FF6A6A;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  & svg {
+    width: 25.99px;
+    height: 23.54px;
+  }
+
+
+  
 }
 
-.product-photo__slider {
-  width: 100vw;
-}
-
-.product-photo__item {
-  width: 597px;
-  height: 724px;
-}
-
-.product-photo__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(42, 42, 42, 0.15);
-  width: 47px;
-  height: 47px;
-}
 
 /* Top Content */
 .top-content {
@@ -853,7 +975,7 @@ ul.breadcrumbs__items li:last-child {
   }
   .footer__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -1028,17 +1150,16 @@ ul.breadcrumbs__items li:last-child {
   }
   /* Footer */
   .footer {
-    height: 70px;
     padding: 30px 0;
     background-color: #222224;
   }
+
   .footer__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin-bottom: 30px;
+    gap: 10px;
   }
   .footer__copyright {
     color: #FBFBFB;

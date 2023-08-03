@@ -1,193 +1,244 @@
 <!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <title>Document</title>
 </head>
 
 <body>
-<header class="header">
-    <div class="container header__wrapper">
-        <div class="header__left-group">
-            <a href="/"><img src="images/logo.svg" alt="Logo" class="header__logo"></a>
-            <a href="#"><img src="images/search.svg" alt="Search" class="header__search"></a>
-        </div>
-        <div class="header__right-group">
-            <a href="#" class="header__icons header__burger">
-                <img src="images/menu.svg" alt="menu">
-            </a>
-            <a href="#" class="header__icons header__account">
-                <img src="images/account.svg" alt="account">
-            </a>
-            <a href="#" class="header__icons header__cart">
-                <img src="images/cart.svg" alt="cart">
-            </a>
-        </div>
-    </div>
-</header>
-
-<div class="header__menu" style="visibility: hidden; opacity: 0;">
-    <p class="header__menu-title">MENU</p>
-    <ul class="header__menu-inner">
-        <li class="header__menu-item"><a href="#">MAN</a>
-            <ul>
-                <li class="header__menu-subitem"><a href="#">Accessories</a></li>
-                <li class="header__menu-subitem"><a href="#">Bags</a></li>
-                <li class="header__menu-subitem"><a href="#">Denim</a></li>
-                <li class="header__menu-subitem"><a href="#">T-Shirts</a></li>
-            </ul>
-        </li>
-        <li class="header__menu-item"><a href="#">WOMAN</a>
-            <ul>
-                <li class="header__menu-subitem"><a href="#">Accessories</a></li>
-                <li class="header__menu-subitem"><a href="#">Jackets & Coats</a></li>
-                <li class="header__menu-subitem"><a href="#">Polos</a></li>
-                <li class="header__menu-subitem"><a href="#">T-Shirts</a></li>
-                <li class="header__menu-subitem"><a href="#">Shirts</a></li>
-            </ul>
-        </li>
-        <li class="header__menu-item"><a href="#">KIDS</a>
-            <ul>
-                <li class="header__menu-subitem"><a href="#">Accessories</a></li>
-                <li class="header__menu-subitem"><a href="#">Jackets & Coats</a></li>
-                <li class="header__menu-subitem"><a href="#">Polos</a></li>
-                <li class="header__menu-subitem"><a href="#">T-Shirts</a></li>
-                <li class="header__menu-subitem"><a href="#">Shirts</a></li>
-                <li class="header__menu-subitem"><a href="#">Bags</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
-
-<section class="breadcrumbs">
-    <div class="container">
-        <div class="breadcrumbs__wrapper">
-            <h5 class="breadcrumbs__title">NEW ARRIVALS </h5>
-            <ul class="breadcrumbs__items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Man</a></li>
-                <li>New Arrivals</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<div class="product-photo">
-    <div class="product-photo__slider">
-        <img src="images/moschino-cheap.png" alt="Moschino cheap and chic" class="product-photo__item">
-        <img src="images/moschino-cheap.png" alt="Moschino cheap and chic" class="product-photo__item">
-    </div>
-</div>
-
-
-<section class="featured-items">
-    <div class="container">
-        <div class="featured-items__cards-wrapper">
-            <div class="featured-items__item">
-                <div class="featured-items__image featured-items__image1">
-                    <a href="#" class="featured-items__cart">
-                        <img src="images/cart.svg" alt="cart" class="featured-items__cart-icon">
-                        <p class="featured-items__cart-text">Add to Cart</p>
-                    </a>
-                </div>
-                <p class="featured-items__card-title">ELLERY X M'O CAPSULE</p>
-                <p class="featured-items__description">Known for her sculptural takes on traditional tailoring,
-                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="featured-items__price">$52.00</p>
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="header__left-group">
+                <a href="/"><img src="images/logo.svg" alt="Logo" class="header__logo"></a>
+                <a href="#"><img src="images/search.svg" alt="Search" class="header__search"></a>
             </div>
-            <div class="featured-items__item">
-                <div class="featured-items__image featured-items__image2">
-                    <a href="#" class="featured-items__cart">
-                        <img src="images/cart.svg" alt="cart" class="featured-items__cart-icon">
-                        <p class="featured-items__cart-text">Add to Cart</p>
-                    </a>
-                </div>
-                <p class="featured-items__card-title">ELLERY X M'O CAPSULE</p>
-                <p class="featured-items__description">Known for her sculptural takes on traditional tailoring,
-                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="featured-items__price">$52.00</p>
-            </div>
-            <div class="featured-items__item">
-                <div class="featured-items__image featured-items__image3">
-                    <a href="#" class="featured-items__cart">
-                        <img src="images/cart.svg" alt="cart" class="featured-items__cart-icon">
-                        <p class="featured-items__cart-text">Add to Cart</p>
-                    </a>
-                </div>
-                <p class="featured-items__card-title">ELLERY X M'O CAPSULE</p>
-                <p class="featured-items__description">Known for her sculptural takes on traditional tailoring,
-                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="featured-items__price">$52.00</p>
+            <div class="header__right-group">
+                <a href="#" class="header__icons header__burger">
+                    <img src="images/menu.svg" alt="menu">
+                </a>
+                <a href="#" class="header__icons header__account">
+                    <img src="images/account.svg" alt="account">
+                </a>
+                <a href="#" class="header__icons header__cart">
+                    <img src="images/cart.svg" alt="cart">
+                </a>
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
-<footer class="footer">
-    <div class="container">
-        <div class="footer__wrapper">
-            <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
-            <div class="footer__icons-inner">
-                <a href="#" class="footer__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16"
-                         viewBox="0 0 11 16" fill="#000000">
-                        <path
+    <div class="header__menu" style="visibility: hidden; opacity: 0;">
+        <p class="header__menu-title">MENU</p>
+        <ul class="header__menu-inner">
+            <li class="header__menu-item"><a href="#">MAN</a>
+                <ul>
+                    <li class="header__menu-subitem"><a href="#">Accessories</a></li>
+                    <li class="header__menu-subitem"><a href="#">Bags</a></li>
+                    <li class="header__menu-subitem"><a href="#">Denim</a></li>
+                    <li class="header__menu-subitem"><a href="#">T-Shirts</a></li>
+                </ul>
+            </li>
+            <li class="header__menu-item"><a href="#">WOMAN</a>
+                <ul>
+                    <li class="header__menu-subitem"><a href="#">Accessories</a></li>
+                    <li class="header__menu-subitem"><a href="#">Jackets & Coats</a></li>
+                    <li class="header__menu-subitem"><a href="#">Polos</a></li>
+                    <li class="header__menu-subitem"><a href="#">T-Shirts</a></li>
+                    <li class="header__menu-subitem"><a href="#">Shirts</a></li>
+                </ul>
+            </li>
+            <li class="header__menu-item"><a href="#">KIDS</a>
+                <ul>
+                    <li class="header__menu-subitem"><a href="#">Accessories</a></li>
+                    <li class="header__menu-subitem"><a href="#">Jackets & Coats</a></li>
+                    <li class="header__menu-subitem"><a href="#">Polos</a></li>
+                    <li class="header__menu-subitem"><a href="#">T-Shirts</a></li>
+                    <li class="header__menu-subitem"><a href="#">Shirts</a></li>
+                    <li class="header__menu-subitem"><a href="#">Bags</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__wrapper">
+                <h5 class="breadcrumbs__title">NEW ARRIVALS </h5>
+                <ul class="breadcrumbs__items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Man</a></li>
+                    <li>New Arrivals</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="product">
+        <div class="product__wrapper">
+            <div class="product__slider">
+                <div class="product__item"><img src="images/moschino-cheap.png" alt="Moschino cheap and chic"></div>
+                <div class="product__item"><img src="images/moschino-cheap.png" alt="Moschino cheap and chic"></div>
+                <div class="product__item"><img src="images/moschino-cheap.png" alt="Moschino cheap and chic"></div>
+            </div>
+        </div>
+
+        <div class="product__info">
+            <div class="container">
+                <div class="product__frame"></div>
+                <h2 class="product__subtitle">WOMEN COLLECTION</h2>
+                <h1 class="product__title">MOSCHINO CHEAP AND CHIC</h1>
+                <p class="product__description">Compellingly actualize fully researched processes before proactive
+                    outsourcing.
+                    Progressively syndicate collaborative
+                    architectures before cutting-edge services. Completely visualize parallel core competencies rather
+                    than
+                    exceptional
+                    portals.</p>
+                <p class="product__price">$561</p>
+                <div class="product__selects">
+                    <select type="text" class="product__select-item">
+                        <option value="" disabled selected>CHOOSE COLOR</option>
+                        <option value="Green">Green</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Yellow">Yellow</option>
+                    </select>
+                    <select type="text" class="product__select-item">
+                        <option value="" disabled selected>CHOOSE SIZE</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                    </select>
+                    <select type="text" class="product__select-item">
+                        <option value="" disabled selected>QUANTITY</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <button href="#" class="product__cart">
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                    <svg width="32" height="29" viewBox="0 0 32 29" preserveAspectRatio="none" fill="none" version="1.1" id="svg14" xmlns="http://www.w3.org/2000/svg">
+                        <defs id="defs18" />
+                        <g id="Button copy" transform="translate(-126.92365)">
+                            <g id="Group 35">
+                                <path id="Forma 1_3"
+                                    d="m 153.201,29 c -0.648,-0.0262 -1.259,-0.3052 -1.704,-0.7773 -0.444,-0.4721 -0.686,-1.0995 -0.673,-1.7477 0.014,-0.6481 0.28,-1.2653 0.743,-1.7191 0.463,-0.4537 1.086,-0.7079 1.734,-0.7079 0.648,0 1.271,0.2542 1.734,0.7079 0.463,0.4538 0.729,1.071 0.742,1.7191 0.014,0.6482 -0.228,1.2756 -0.672,1.7477 -0.445,0.4721 -1.056,0.7511 -1.704,0.7773 z m -19.448,-2.68 c 0,-0.53 0.157,-1.0482 0.452,-1.4889 0.294,-0.4407 0.713,-0.7842 1.202,-0.9871 0.49,-0.2028 1.029,-0.2559 1.549,-0.1525 0.52,0.1034 0.997,0.3587 1.372,0.7335 0.375,0.3748 0.63,0.8523 0.734,1.3722 0.103,0.5198 0.05,1.0587 -0.153,1.5484 -0.203,0.4897 -0.546,0.9083 -0.987,1.2027 -0.441,0.2945 -0.959,0.4517 -1.489,0.4517 -0.352,3e-4 -0.701,-0.0689 -1.026,-0.2034 -0.326,-0.1346 -0.621,-0.332 -0.87,-0.5808 -0.249,-0.2489 -0.447,-0.5445 -0.582,-0.8697 -0.135,-0.3253 -0.204,-0.674 -0.204,-1.0261 z m 3.8,-5.634 c -0.259,8e-4 -0.512,-0.0836 -0.719,-0.2403 -0.207,-0.1566 -0.356,-0.3768 -0.426,-0.6267 L 131.575,2.36401 h -3.393 c -0.313,0 -0.614,-0.12454 -0.836,-0.3462 C 127.125,1.79614 127,1.49549 127,1.18201 127,0.868519 127.125,0.567873 127.346,0.346205 127.568,0.124537 127.869,5.81268e-6 128.182,5.81268e-6 h 4.281 C 132.723,-8.0736e-4 132.975,0.0837201 133.182,0.240568 c 0.206,0.156848 0.356,0.377316 0.425,0.627438 L 138.44,18.323 h 13.178 l 4.383,-10.04799 h -14.6 c -0.158,0.0046 -0.316,-0.02259 -0.463,-0.07994 -0.148,-0.05736 -0.282,-0.14373 -0.396,-0.25399 -0.113,-0.11026 -0.203,-0.24217 -0.265,-0.38793 -0.062,-0.14576 -0.093,-0.3024 -0.093,-0.46065 0,-0.15824 0.031,-0.31488 0.093,-0.46064 0.062,-0.14576 0.152,-0.27767 0.265,-0.38793 0.114,-0.11026 0.248,-0.19663 0.396,-0.25399 0.147,-0.05735 0.305,-0.08453 0.463,-0.07993 h 16.413 c 0.196,-5e-5 0.388,0.04865 0.56,0.14171 0.173,0.09306 0.319,0.22754 0.426,0.39129 0.108,0.16428 0.173,0.35268 0.191,0.54844 0.017,0.19576 -0.014,0.39279 -0.091,0.57355 l -5.405,12.412 c -0.092,0.2106 -0.244,0.3898 -0.437,0.5157 -0.192,0.1259 -0.417,0.1931 -0.647,0.1933 z"
+                                    fill="#FF6A6A" />
+                            </g>
+                        </g>
+                    </svg>
+                    <p class="product__cart-text">Add to Cart</p>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <section class="featured-items">
+        <div class="container">
+            <div class="featured-items__cards-wrapper">
+                <div class="featured-items__item">
+                    <div class="featured-items__image featured-items__image1">
+                        <a href="#" class="featured-items__cart">
+                            <img src="images/cart.svg" alt="cart" class="featured-items__cart-icon">
+                            <p class="featured-items__cart-text">Add to Cart</p>
+                        </a>
+                    </div>
+                    <p class="featured-items__card-title">ELLERY X M'O CAPSULE</p>
+                    <p class="featured-items__description">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="featured-items__price">$52.00</p>
+                </div>
+                <div class="featured-items__item">
+                    <div class="featured-items__image featured-items__image2">
+                        <a href="#" class="featured-items__cart">
+                            <img src="images/cart.svg" alt="cart" class="featured-items__cart-icon">
+                            <p class="featured-items__cart-text">Add to Cart</p>
+                        </a>
+                    </div>
+                    <p class="featured-items__card-title">ELLERY X M'O CAPSULE</p>
+                    <p class="featured-items__description">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="featured-items__price">$52.00</p>
+                </div>
+                <div class="featured-items__item">
+                    <div class="featured-items__image featured-items__image3">
+                        <a href="#" class="featured-items__cart">
+                            <img src="images/cart.svg" alt="cart" class="featured-items__cart-icon">
+                            <p class="featured-items__cart-text">Add to Cart</p>
+                        </a>
+                    </div>
+                    <p class="featured-items__card-title">ELLERY X M'O CAPSULE</p>
+                    <p class="featured-items__description">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="featured-items__price">$52.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
+                <div class="footer__icons-inner">
+                    <a href="#" class="footer__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16"
+                            fill="#000000">
+                            <path
                                 d="M9.08827 8.28L9.50677 5.61602H6.89013V3.88729C6.89013 3.15847 7.25565 2.44806 8.42756 2.44806H9.61713V0.179975C9.61713 0.179975 8.53763 0 7.50551 0C5.35064 0 3.94211 1.27593 3.94211 3.5857V5.61602H1.54678V8.28H3.94211V14.72H6.89013V8.28H9.08827Z"
-                                fill="black"/>
-                    </svg>
-                </a>
-                <a href="#" class="footer__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15"
-                         viewBox="0 0 16 15" fill="#000000">
-                        <path
+                                fill="black" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"
+                            fill="#000000">
+                            <path
                                 d="M8.13677 3.68162C6.02163 3.68162 4.31555 5.38494 4.31555 7.49666C4.31555 9.60838 6.02163 11.3117 8.13677 11.3117C10.2519 11.3117 11.958 9.60838 11.958 7.49666C11.958 5.38494 10.2519 3.68162 8.13677 3.68162ZM8.13677 9.97693C6.76991 9.97693 5.65248 8.86463 5.65248 7.49666C5.65248 6.12869 6.76658 5.01639 8.13677 5.01639C9.50695 5.01639 10.6211 6.12869 10.6211 7.49666C10.6211 8.86463 9.50363 9.97693 8.13677 9.97693ZM13.0056 3.52557C13.0056 4.02029 12.6065 4.41541 12.1143 4.41541C11.6188 4.41541 11.223 4.01697 11.223 3.52557C11.223 3.03416 11.6221 2.63572 12.1143 2.63572C12.6065 2.63572 13.0056 3.03416 13.0056 3.52557ZM15.5364 4.42869C15.4799 3.2367 15.2072 2.18084 14.3325 1.31092C13.4612 0.440997 12.4036 0.168732 11.2097 0.108966C9.9792 0.0392395 6.29101 0.0392395 5.0605 0.108966C3.8699 0.165411 2.81233 0.437677 1.93768 1.3076C1.06302 2.17752 0.793639 3.23338 0.733776 4.42537C0.663937 5.65389 0.663937 9.33611 0.733776 10.5646C0.790313 11.7566 1.06302 12.8125 1.93768 13.6824C2.81233 14.5523 3.86658 14.8246 5.0605 14.8844C6.29101 14.9541 9.9792 14.9541 11.2097 14.8844C12.4036 14.8279 13.4612 14.5556 14.3325 13.6824C15.2039 12.8125 15.4766 11.7566 15.5364 10.5646C15.6063 9.33611 15.6063 5.65721 15.5364 4.42869ZM13.9468 11.8828C13.6874 12.5336 13.1852 13.0349 12.53 13.2972C11.5489 13.6857 9.22094 13.5961 8.13677 13.5961C7.05259 13.5961 4.72128 13.6824 3.74353 13.2972C3.09169 13.0383 2.58951 12.5369 2.32678 11.8828C1.93768 10.9033 2.02747 8.57908 2.02747 7.49666C2.02747 6.41424 1.941 4.0867 2.32678 3.11053C2.58619 2.45975 3.08837 1.95838 3.74353 1.69608C4.72461 1.3076 7.05259 1.39725 8.13677 1.39725C9.22094 1.39725 11.5523 1.31092 12.53 1.69608C13.1818 1.95506 13.684 2.45643 13.9468 3.11053C14.3359 4.09002 14.2461 6.41424 14.2461 7.49666C14.2461 8.57908 14.3359 10.9066 13.9468 11.8828Z"
-                                fill="black"/>
-                    </svg>
-                </a>
-                <a href="#" class="footer__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16"
-                         viewBox="0 0 13 16" fill="#000000">
-                        <g clip-path="url(#clip0_190_1618)">
-                            <path
+                                fill="black" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16"
+                            fill="#000000">
+                            <g clip-path="url(#clip0_190_1618)">
+                                <path
                                     d="M6.7402 0.203125C3.55552 0.203125 0.408081 2.34063 0.408081 5.8C0.408081 8 1.63726 9.25 2.38221 9.25C2.68951 9.25 2.86643 8.3875 2.86643 8.14375C2.86643 7.85313 2.13079 7.23438 2.13079 6.025C2.13079 3.5125 4.03043 1.73125 6.48878 1.73125C8.60259 1.73125 10.167 2.94062 10.167 5.1625C10.167 6.82187 9.50585 9.93437 7.3641 9.93437C6.59121 9.93437 5.93006 9.37187 5.93006 8.56563C5.93006 7.38438 6.74951 6.24062 6.74951 5.02187C6.74951 2.95312 3.83487 3.32812 3.83487 5.82812C3.83487 6.35313 3.90006 6.93437 4.13286 7.4125C3.70451 9.26875 2.82919 12.0344 2.82919 13.9469C2.82919 14.5375 2.91299 15.1188 2.96886 15.7094C3.0744 15.8281 3.02163 15.8156 3.18304 15.7563C4.74744 13.6 4.69157 13.1781 5.39928 10.3562C5.78107 11.0875 6.76814 11.4812 7.55034 11.4812C10.8468 11.4812 12.3274 8.24688 12.3274 5.33125C12.3274 2.22813 9.66415 0.203125 6.7402 0.203125Z"
-                                    fill="black"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_190_1618">
-                                <rect width="11.9193" height="16" fill="white" transform="translate(0.408081)"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-                <a href="#" class="footer__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
-                         viewBox="0 0 17 16" fill="#000000">
-                        <g clip-path="url(#clip0_190_1614)">
-                            <path
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_190_1618">
+                                    <rect width="11.9193" height="16" fill="white" transform="translate(0.408081)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                            fill="#000000">
+                            <g clip-path="url(#clip0_190_1614)">
+                                <path
                                     d="M14.4181 4.74107C14.4281 4.88319 14.4281 5.02535 14.4281 5.16747C14.4281 9.50247 11.1509 14.4974 5.16096 14.4974C3.31558 14.4974 1.60132 13.9593 0.159302 13.0253C0.421495 13.0558 0.673569 13.0659 0.94585 13.0659C2.46851 13.0659 3.8702 12.5482 4.98953 11.6649C3.5576 11.6345 2.3576 10.6903 1.94415 9.39081C2.14585 9.42125 2.34751 9.44156 2.5593 9.44156C2.85172 9.44156 3.14418 9.40094 3.41643 9.32991C1.92401 9.02531 0.80465 7.70553 0.80465 6.11163V6.07103C1.23825 6.31469 1.74249 6.46697 2.2769 6.48725C1.39959 5.89841 0.824826 4.89335 0.824826 3.75628C0.824826 3.14716 0.98614 2.58878 1.26851 2.10147C2.87187 4.09131 5.28195 5.39078 7.98443 5.53294C7.93403 5.28928 7.90376 5.0355 7.90376 4.78169C7.90376 2.97457 9.35586 1.5025 11.1609 1.5025C12.0987 1.5025 12.9457 1.89844 13.5407 2.53803C14.2768 2.39591 14.9827 2.12178 15.6079 1.74616C15.3659 2.5076 14.8516 3.14719 14.176 3.55325C14.8315 3.48222 15.4668 3.29944 16.0516 3.04566C15.608 3.69538 15.0533 4.27403 14.4181 4.74107Z"
-                                    fill="black"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_190_1614">
-                                <rect width="15.8924" height="16" fill="white" transform="translate(0.159302)"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </a>
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_190_1614">
+                                    <rect width="15.8924" height="16" fill="white" transform="translate(0.159302)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script src="index.js"></script>
+    </footer>
+    <script src="/js/main.min.js"></script>
 </body>
 
 </html>
