@@ -206,6 +206,97 @@ ul.breadcrumbs__items li:last-child {
   &__continue-btn {
 
   }
+  &__checkout {
+    &-inner {
+      margin-left: 125px;
+    }
+    &-title {
+      font-family: Lato-Light, sans-serif;
+      font-size: 16px;
+      color: #222222;
+      margin-bottom: 20px;
+    }
+    &-quote {
+      width: 100px;
+      height: 35px;
+      background-color: transparent;
+      border: 1px solid #A4A4A4;
+      color: #4A4A4A;
+      font-family: Lato-Light, sans-serif;
+      font-size: 11px;
+      transition: color .3s ease, border .3s ease;
+      &:hover {
+        border: 1px solid $colorSelect;
+        color: $colorSelect;
+      }
+    }
+  }
+  &__form {
+    &-item {
+      margin-bottom: 57px;
+      &-inner {
+        display: flex;
+        flex-direction: column;
+      }
+      & input {
+        padding: 15px 17px;
+        font-family: Lato-Light, sans-serif;
+        font-size: 13px;
+        color: #B1B1B1;
+        margin-bottom: 20px;
+        border: 1px solid #A4A4A4;
+        width: calc(360px - 17px * 2);
+        height: 15px;
+        &::placeholder {
+          color: #222222;
+        }
+      }
+    }
+  }
+  &__total {
+    background-color: #F5F3F3;
+    width: calc(360px - 34px * 2);
+    height: calc(214px - 40px * 2);
+    text-align: right;
+    padding: 40px 34px;
+  }
+  &__sub-total {
+    font-family: Lato-Regular, sans-serif;
+    font-size: 11px;
+    color: #4A4A4A;
+    margin-bottom: 12px;
+    & span {
+      margin-left: 30px;
+    }
+  }
+  &__grand-total {
+    font-family: Lato-Light, sans-serif;
+    font-size: 16px;
+    color: #222222;
+    border-bottom: 1px solid #E2E2E2;
+    height: 35px;
+    margin-bottom: 39px;
+    & span {
+      font-family: Lato-Bold, sans-serif;
+      font-size: 16px;
+      color: $colorSelect;
+      margin-left: 30px;
+    }
+  }
+  &__submit {
+    color: #ffffff;
+    font-family: Lato-Light, sans-serif;
+    font-size: 16px;
+    padding: 15px 42px;
+    background-color: $colorSelect;
+    border: 0;
+    transition: border .3s ease, color .3s ease, background-color .3s ease;
+    &:hover {
+      color: $colorSelect;
+      background-color: transparent;
+      border: 1px solid $colorSelect;
+    }
+  }
 }
 
 /* Product */
