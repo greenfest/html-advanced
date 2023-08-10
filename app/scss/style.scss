@@ -9,6 +9,10 @@ $colorSelect: #EF5B70;
 $anotherPink: #F16D7F;
 $thirdPink: #FF6A6A;
 $textColorGray: #222224;
+$ll: Lato-Light, sans-serif;
+$lr: Lato-Regular, sans-serif;
+$lb: Lato-Bold, sans-serif;
+
 
 /* Header */
 .header {
@@ -200,12 +204,6 @@ ul.breadcrumbs__items li:last-child {
       border: 1px solid $colorSelect;
     }
   }
-  &__clear-btn {
-
-  }
-  &__continue-btn {
-
-  }
   &__checkout {
     &-inner {
       margin-left: 125px;
@@ -296,6 +294,102 @@ ul.breadcrumbs__items li:last-child {
       background-color: transparent;
       border: 1px solid $colorSelect;
     }
+  }
+}
+
+/* Registration */
+
+.registration {
+  padding: 64px 0 96px;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0 0;
+    grid-template-areas:
+    ". .";
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    &-title {
+      font-family: Lato-Light, sans-serif;
+      color: #222222;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    &-submit {
+      background-color: #F16D7F;
+      color: #ffffff;
+      font-family: Lato-Light, sans-serif;
+      width: 167px;
+      height: 57px;
+      border: 0;
+      transition: color .3s ease, background-color .3s ease, border .3s ease, fill .3s ease;
+      & svg {
+        margin-left: 30px;
+      }
+      &:hover {
+        color: $colorSelect;
+        background-color: #ffffff;
+        border: 1px solid $colorSelect;
+      }
+      &:hover path {
+        fill: $colorSelect;
+      }
+    }
+  }
+  &__input {
+    font-family: Lato-Light, sans-serif;
+    color: #222222;
+    font-size: 16px;
+    padding: 13px 17px 16px;
+    border: 1px solid #B1B1B1;
+    margin-bottom: 20px;
+    &::placeholder {
+      color: #B1B1B1;
+    }
+  }
+  &__checkboxes {
+    margin-bottom: 35px;
+    & label {
+      margin-right: 20px;
+      font-family: Lato-Light, sans-serif;
+      font-size: 11px;
+    }
+  }
+  &__checkbox {
+    border: 1px solid #B1B1B1;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+  }
+  &__tips {
+    color: #B1B1B1;
+    font-family: Lato-Light, sans-serif;
+    font-size: 13px;
+    margin-bottom: 39px;
+  }
+  &__right-group {
+    margin-left: 128px;
+  }
+  &__desc-title {
+    font-family: $ll;
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+  &__desc-text {
+    font-family: $ll;
+    font-size: 24px;
+    margin-bottom: 21px;
+  }
+  &__li {
+    list-style-image: url('../images/list-mark.svg');
+    font-family: $ll;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding-left: 20px;
   }
 }
 

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__wrapper">
+      <div class="header__left-group">
+        <a href="/"><img src="images/logo.svg" alt="Logo" class="header__logo"></a>
+        <a href="#"><img src="images/search.svg" alt="Search" class="header__search"></a>
+      </div>
+      <div class="header__right-group">
+        <div class="header__icons header__burger">
+          <label for="burger"><img src="images/menu.svg" alt=""></label>
+          <input type="checkbox" name="" id="burger">
+          <div class="header__menu">
+            <p class="header__menu-title">MENU</p>
+            <ul class="header__menu-inner">
+              <li class="header__menu-item"><a href="#">MAN</a>
+                <ul>
+                  <li class="header__menu-subitem"><a href="#">Accessories</a></li>
+                  <li class="header__menu-subitem"><a href="#">Bags</a></li>
+                  <li class="header__menu-subitem"><a href="#">Denim</a></li>
+                  <li class="header__menu-subitem"><a href="#">T-Shirts</a></li>
+                </ul>
+              </li>
+              <li class="header__menu-item"><a href="#">WOMAN</a>
+                <ul>
+                  <li class="header__menu-subitem"><a href="#">Accessories</a></li>
+                  <li class="header__menu-subitem"><a href="#">Jackets & Coats</a></li>
+                  <li class="header__menu-subitem"><a href="#">Polos</a></li>
+                  <li class="header__menu-subitem"><a href="#">T-Shirts</a></li>
+                  <li class="header__menu-subitem"><a href="#">Shirts</a></li>
+                </ul>
+              </li>
+              <li class="header__menu-item"><a href="#">KIDS</a>
+                <ul>
+                  <li class="header__menu-subitem"><a href="#">Accessories</a></li>
+                  <li class="header__menu-subitem"><a href="#">Jackets & Coats</a></li>
+                  <li class="header__menu-subitem"><a href="#">Polos</a></li>
+                  <li class="header__menu-subitem"><a href="#">T-Shirts</a></li>
+                  <li class="header__menu-subitem"><a href="#">Shirts</a></li>
+                  <li class="header__menu-subitem"><a href="#">Bags</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="header__icons header__account">
+          <img src="images/account.svg" alt="account">
+        </a>
+        <a href="#" class="header__icons header__cart">
+          <img src="images/cart.svg" alt="cart">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__wrapper">
+        <h5 class="breadcrumbs__title">REGISTRATION</h5>
+      </div>
+    </div>
+  </section>
+
+  <div class="registration">
+    <div class="container">
+      <div class="registration__wrapper">
+        <div class="registration__left-group">
+          <form action="#" class="registration__form">
+            <h3 class="registration__form-title">Your Name</h3>
+            <input type="text" id="firstName" class="registration__input" placeholder="First Name">
+            <input type="text" id="lastName" class="registration__input" placeholder="Last Name">
+            <div class="registration__checkboxes">
+              <input type="radio" class="registration__checkbox" name="gender" id="male">
+              <label for="male">Male</label>
+              <input type="radio" class="registration__checkbox" name="gender" id="female">
+              <label for="female">Female</label>
+            </div>
+            <h3 class="registration__form-title">Login details</h3>
+            <input type="email" id="email" class="registration__input" placeholder="Email">
+            <input type="password" id="password" class="registration__input" placeholder="Password">
+            <p class="registration__tips">
+              Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+            </p>
+            <button type="submit" class="registration__form-submit">JOIN NOW <svg xmlns="http://www.w3.org/2000/svg" width="17" height="10" viewBox="0 0 17 10" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"
+                fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"
+                fill="white" />
+            </svg></button>
+          </form>
+        </div>
+        <div class="registration__right-group">
+          <h2 class="registration__desc-title">
+            LOYALTY HAS ITS PERKS
+          </h2>
+          <p class="registration__desc-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you
+          join:</p>
+          <ul>
+            <li class="registration__li">15% off welcome offer
+</li>
+            <li class="registration__li">Free shipping, returns and exchanges on all orders
+</li>
+            <li class="registration__li">$10 off a purchase on your birthday
+</li>
+            <li class="registration__li">Early access to products</li>
+            <li class="registration__li">Exclusive offers & rewards</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="subscription">
+    <div class="container">
+      <div class="subscription__wrapper">
+        <div class="subscription__quote">
+          <img src="images/subscription_photo.png" alt="" class="subscription__image">
+          <p class="subscription__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a <span
+              class="subscription__text_italic">pulvinar purus condimentum“</span></p>
+        </div>
+        <div class="subscription__form">
+          <h6 class="subscription__title">SUBSCRIBE</h6>
+          <p class="subscription__subtitle">FOR OUR NEWSLETTER AND PROMOTION</p>
+          <form action="#" class="subscription__subscribe">
+            <input type="text" id="subscription__input" class="subscription__input" placeholder="Enter Your Email">
+            <button type="submit" class="subscription__submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
+        <div class="footer__icons-inner">
+          <a href="#" class="footer__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16" fill="#000000">
+              <g clip-path="url(#clip0_190_1618)">
+                <path
+                  d="M6.7402 0.203125C3.55552 0.203125 0.408081 2.34063 0.408081 5.8C0.408081 8 1.63726 9.25 2.38221 9.25C2.68951 9.25 2.86643 8.3875 2.86643 8.14375C2.86643 7.85313 2.13079 7.23438 2.13079 6.025C2.13079 3.5125 4.03043 1.73125 6.48878 1.73125C8.60259 1.73125 10.167 2.94062 10.167 5.1625C10.167 6.82187 9.50585 9.93437 7.3641 9.93437C6.59121 9.93437 5.93006 9.37187 5.93006 8.56563C5.93006 7.38438 6.74951 6.24062 6.74951 5.02187C6.74951 2.95312 3.83487 3.32812 3.83487 5.82812C3.83487 6.35313 3.90006 6.93437 4.13286 7.4125C3.70451 9.26875 2.82919 12.0344 2.82919 13.9469C2.82919 14.5375 2.91299 15.1188 2.96886 15.7094C3.0744 15.8281 3.02163 15.8156 3.18304 15.7563C4.74744 13.6 4.69157 13.1781 5.39928 10.3562C5.78107 11.0875 6.76814 11.4812 7.55034 11.4812C10.8468 11.4812 12.3274 8.24688 12.3274 5.33125C12.3274 2.22813 9.66415 0.203125 6.7402 0.203125Z"
+                  fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_190_1618">
+                  <rect width="11.9193" height="16" fill="white" transform="translate(0.408081)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#" class="footer__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="#000000">
+              <g clip-path="url(#clip0_190_1614)">
+                <path
+                  d="M14.4181 4.74107C14.4281 4.88319 14.4281 5.02535 14.4281 5.16747C14.4281 9.50247 11.1509 14.4974 5.16096 14.4974C3.31558 14.4974 1.60132 13.9593 0.159302 13.0253C0.421495 13.0558 0.673569 13.0659 0.94585 13.0659C2.46851 13.0659 3.8702 12.5482 4.98953 11.6649C3.5576 11.6345 2.3576 10.6903 1.94415 9.39081C2.14585 9.42125 2.34751 9.44156 2.5593 9.44156C2.85172 9.44156 3.14418 9.40094 3.41643 9.32991C1.92401 9.02531 0.80465 7.70553 0.80465 6.11163V6.07103C1.23825 6.31469 1.74249 6.46697 2.2769 6.48725C1.39959 5.89841 0.824826 4.89335 0.824826 3.75628C0.824826 3.14716 0.98614 2.58878 1.26851 2.10147C2.87187 4.09131 5.28195 5.39078 7.98443 5.53294C7.93403 5.28928 7.90376 5.0355 7.90376 4.78169C7.90376 2.97457 9.35586 1.5025 11.1609 1.5025C12.0987 1.5025 12.9457 1.89844 13.5407 2.53803C14.2768 2.39591 14.9827 2.12178 15.6079 1.74616C15.3659 2.5076 14.8516 3.14719 14.176 3.55325C14.8315 3.48222 15.4668 3.29944 16.0516 3.04566C15.608 3.69538 15.0533 4.27403 14.4181 4.74107Z"
+                  fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_190_1614">
+                  <rect width="15.8924" height="16" fill="white" transform="translate(0.159302)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/main.min.js"></script>
+</body>
+
+</html>
