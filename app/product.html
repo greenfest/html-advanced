@@ -79,9 +79,9 @@
     <div class="product">
         <div class="product__wrapper">
             <div class="product__slider">
-                <div class="product__item"><img src="images/moschino-cheap.png" alt="Moschino cheap and chic"></div>
-                <div class="product__item"><img src="images/moschino-cheap.png" alt="Moschino cheap and chic"></div>
-                <div class="product__item"><img src="images/moschino-cheap.png" alt="Moschino cheap and chic"></div>
+                <div class="product__item"><img src="images/moschino-cheap.png" class="product__img" alt="Moschino cheap and chic"></div>
+                <div class="product__item"><img src="images/moschino-cheap.png" class="product__img"  alt="Moschino cheap and chic"></div>
+                <div class="product__item"><img src="images/moschino-cheap.png" class="product__img"  alt="Moschino cheap and chic"></div>
             </div>
         </div>
 
@@ -99,24 +99,30 @@
                     portals.</p>
                 <p class="product__price">$561</p>
                 <div class="product__selects">
-                    <select type="text" class="product__select-item">
-                        <option value="" disabled selected>CHOOSE COLOR</option>
-                        <option value="Green">Green</option>
-                        <option value="Blue">Blue</option>
-                        <option value="Yellow">Yellow</option>
-                    </select>
-                    <select type="text" class="product__select-item">
-                        <option value="" disabled selected>CHOOSE SIZE</option>
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                    </select>
-                    <select type="text" class="product__select-item">
-                        <option value="" disabled selected>QUANTITY</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
+                    <div class="product__select-item-wrapper">
+                        <select class="product__select-item">
+                            <option value="" disabled selected>CHOOSE COLOR</option>
+                            <option value="Green">Green</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Yellow">Yellow</option>
+                        </select>
+                    </div>
+                    <div class="product__select-item-wrapper">
+                        <select class="product__select-item">
+                            <option value="" disabled selected>CHOOSE SIZE</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                        </select>
+                    </div>
+                    <div class="product__select-item-wrapper">
+                        <select class="product__select-item">
+                            <option value="" disabled selected>QUANTITY</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
                 </div>
                 <button href="#" class="product__cart">
                     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -130,7 +136,7 @@
                             </g>
                         </g>
                     </svg>
-                    <p class="product__cart-text">Add to Cart</p>
+                    <span class="product__cart-text">Add to Cart</span>
                 </button>
             </div>
 
